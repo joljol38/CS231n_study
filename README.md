@@ -3,17 +3,46 @@
 * Session Date: Wed, 22:30 (PM 10:30)
 * Notion Link: [Notion](https://url.kr/4bin67)
 * Zoom Link: [Zoom](https://korea-ac-kr.zoom.us/j/96772869170?pwd=U1ZiSHJFeWJ6QXVNdHg3Z2JWMHM1Zz09)
+---
+# How can I resolve things I don't know while coding?
+* 코딩 과제를 하시게 되면, 무난하게 흘러가는 부분도 있을 것이고 모르는 부분도 있을 것이라고 생각이 됩니다.
+* 특히, 주요 부분을 벡터화해서 구현하는 부분은 쉽지 않으실분들이 많을텐데, 그런 분들은 모르는 부분을 **issue** 탭에 올려주세요.
+    * 올려주실 때, `[Assignment #{과제번호}][Q{과제번호}][파일명] 막히는 부분 1줄평` 으로 이름 지어서 작성해주세요.
+    * 예를 들어, Assignment #1의 Q2번 중 svm.ipynb를 코딩하다가, 파라미터 튜닝이 막히셨다면 `[Assignment #1][Q2][svm.ipynb] 하이퍼파리미터 튜닝`이라고 제목을 지으시고, 내용은 자유롭게 어떻게 접근하셔서 어느 부분이 막히셨는지 작성해주시면 됩니다.
+    * 참고로 Issue 탭은 제 Repository에 밖에 없으니, 이쪽에 올려주셔야 합니다.
+* 확인 후 만일 댓글이 없으면 제가 답 드리고, 뭐 여러분들끼리 자정작용으로 하셔도 됩니다.
+* Issue 탭은 수시로 확인해주세요.
+---
+# Introduction of Assignment #2
+* 전주까지 간단하게 Deep learning이 무엇인지에 대해 맛봤다면, 이번주부터는 본격적으로 어떤 기법이 활용이 되는지에 대해 알아보는 주입니다.
+* 여러가지 Optimization 기법을 알아보고, CNN에 대해서 조금은 알아볼 예정입니다!
+* 대신 너무 깊은 Visualizing까지는 나가지 않을 예정이므로, 너무 많은 양은 나가지 않을 예정입니다.
 
-# Introduction
-* 01/18(수) 부터 7주간 CS231n의 모든 기록이 저장될 Github Repository입니다.
-* 팀별로, 그리고 개인별로 자유롭게 fork를 하셔서 사용하시면 됩니다.
-* 너무 너저분해 지지 않기 위해, 해당 Repository에서 인당 최대 브랜치는 **1개**로 제한하겠습니다. (안 파셔도 됩니다!)
-    * Fork는 자유입니다.
-    * 개인 브랜치는 개인이 했던 내용을 저장하는 곳으로, Main Branch로 영향은 없게 하시면 됩니다. 커밋하실 때 본인쪽에서 하셔야해요
-* 만일 개인 Branch를 파실 경우, 이름은 main_save_{본인 github id} 으로 지어주시면 되겠습니다.
-    * 예시: 저(okaybody10)이 새로 Branch를 파면, main_save_okaybody10 으로 하시면 됩니다.
-    * 이름이 다르면, 임의로 삭제될 수도 있습니다,, (진짜인지 가짜인지 구별할 방법이 없어용...)
+# Cover of Assignment #2
+* 모든 스터디 진행인원은 **Lecture 5 - Lecture 7**까지 수강하여야 합니다.
+    * Lecture 5 | Convolutional Neural Networks
+    * Lecture 6 | Training Neural Networks I
+    * Lecture 7 | Training Neural Networks II
+* 또한, 필수는 아니지만 추천 사항으로 **Lecture 8 ~ Lecture 9**를 수강하시면 됩니다.
+    * Lecture 8 | Deep Learning Software
+    * Lecture 9 | CNN Architectures
+* 시청 이후 흥미로운 사실이나 질문 사항을 아래 설문을 통해 작성합니다.
+    * 추후 오픈 예정
 
+# Assignment #2 study materials
+* [Assignment 2 Info](https://cs231n.github.io/assignments2022/assignment2/)
+* [Lecture 5 ~ Lecutre 7](http://cs231n.stanford.edu/schedule.html)
+* [Youtube Link](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
+
+# 질문 설문 링크
+* 설문 링크는 02/10(금) 공개됩니다.
+    * 추후 오픈 예정
+* 모든 분들은 답을 **02/12(일)** 까지 해주세요. 이후, 발표 주제를 사다리타기로 뽑을 예정입니다.
+
+# (Advanced) Residual? GAN? Diffusion?
+* 뭐 넣을지 고민 중입니다.. 재밌는 주제로 뭐가 있을까요..
+* GAN / Diffusion 이라는 재밌는 분야를 넣을지, Reisudal이라는 혁신적인 기술을 넣을지.. 고민이네요
+---
 # Role of Branch
 * Branch에는 Assignment #1와 Assignment #2, 그리고 1주차에 대한 내용이 들어가게 됩니다.
 * 이론 및 코딩으로 따로 나누진 않을 생각이고, 도움이 되는 자료들(공부할 때 사용하면 좋은 자료들)을 업로드 해놓을 예정입니다.
@@ -27,16 +56,3 @@
     * Pull request를 날릴 땐 임의로 Branch를 만들어도 됩니다. 어짜피 닫고 나면 없어져요
     * 이게 좀 꼬이면 골치 아픈데, Fork => Pull request를 날리시면 안 되고, 이 Repository의 Branch에서 바로 Pull request를 날리셔야 합니다. 그래야, 정보가 보존됩니다.
     * "그냥 지금 이 사람이 무슨 소리하는지 모르겠다~" 싶으시면 저한테 따로 자료를 보내주세요. 제가 올려 놓겠습니다.
-
----
-# 당부차 드리는 말씀
-* 일단, 제가 이런말 할 자격이 있는지도 모르겠고, 여러분들에 비해 많은 것을 알고 있지도 않지만, 제가 공부하면서 느낀 걸 바탕으로 처음하시는 분들께 말씀드리려고 여기 적습니다.
-* 사실, CS231n 이라는것 자체가 참 애매모호합니다. 처음 볼때는 따라가기 급급하실거고, 나중에 다시 보면 이런 것들이 숨어져 있었구나 놀랍기도 하고 합니다.
-* 어찌보면 이 강좌는 딥러닝의 교과서라고 하지, 참고서는 아니라는 생각이 듭니다.
-* 그렇기 때문에 어려운게 너무 당연한거고, 한번에 봤을 때 이해가 안 되는게 많을 수 있습니다. (다행히도 저희는 Transformer를 다루지 않지만, 이쪽으로 가면 정말 봐도봐도 새로운 영감들이 떠오를 정도로 어렵습니다)
-* 저희 학회? 동아리? 뭐 어쨌든.. 이런 분들을 위해 방학 세션을 열고 멘멘 스터디를 하는 거죠
-    * 방학 세션은 너무 짧아서 엄청나게 도움된다 같은 느낌은 아니긴 합니다만 한 번 들어보는 것 자체가 도움이 되니까요
-* 모르겠으면 뭐 멘멘하실 때 멘토분들께, 혹은 주변 분들께, 인터넷에 찾아다니면서 이해해보려고 해보세요. 한 번 해놓으면 나중에 정말 편하긴 합니다.
-* 딥러닝을 한번 배워보신 분들은 복습한다는 느낌으로 하시면 좋을 것 같습니다.
-    * 특히 Backprop을 직접 구현해보려고 하면 진짜 힘드실 거에요,, 저만 그럴수도?
-* 마지막으로, 저도 처음하시는 분들이 조금 더 신경이 쓰이고 주의를 쏟겠지만, 진짜 아는 건지 그냥 넘어가는건지 정확하게 알 수는 없습니당.. 누구든지 너무 어렵다거나 그러면 스터디를 그만 두는것보다 저에게 먼저 말을 해주세요. 탈주하시는거 보면 마음 아파요
